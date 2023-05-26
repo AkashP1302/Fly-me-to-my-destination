@@ -22,7 +22,7 @@ function minimumPlanesRequired(fuelArray) {
 
   // After the loop, check if the currentFuel is greater than or equal to the index of the last airport
   if (currentFuel >= n - 1) {
-    return planesRequired; // Return the number of planes required
+    return planesRequired + 1; // Return the number of planes required
   } else {
     return -1; // If it is not possible to reach the last airport, return -1
   }
